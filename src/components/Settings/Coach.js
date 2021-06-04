@@ -78,9 +78,10 @@ function Coach() {
 
 export default Coach
 
-const Container = styled.div`
+const Container = styled.main`
     display: flex;
     flex-direction: row;
+    overflow-x: hidden;
     position:relative;
     margin-top: 80px;
     padding-top: 10px;
@@ -89,7 +90,7 @@ const Container = styled.div`
     margin-left: 400px;
     margin-right: 350px;
     max-width: 1140px;
-    min-width: 900px;   
+    // min-width: 900px;   
 `
 const MainContainer = styled.div`
 padding-right: 20px;
