@@ -23,14 +23,14 @@ function ProfileMenu(props) {
             </UserInfo>
             <Profile>
             <LI clicked={props.account} onClick={clickedHandler}><a href="/settings/account">Account</a></LI>
-            <LI><a href="/">Learning Language</a></LI>
-            <LI><a href="/">Profile</a></LI>
-            <LI><a href="/">Password</a></LI>
-            <LI><a href="/">Duolingo Plus</a></LI>
-            <LI><a href="/">Notifications</a></LI>
+            <LI clicked={false}><a href="/">Learning Language</a></LI>
+            <LI clicked={false}><a href="/">Profile</a></LI>
+            <LI clicked={false}><a href="/">Password</a></LI>
+            <LI clicked={false}><a href="/">Duolingo Plus</a></LI>
+            <LI clicked={false}><a href="/">Notifications</a></LI>
             <LI clicked={props.coach} onClick={clickedHandler}><a href="/settings/coach">Coach</a></LI>
-            <LI><a href="/">Progress Sharing</a></LI>
-            <LI><a href="/">Privacy</a></LI>
+            <LI clicked={false}><a href="/">Progress Sharing</a></LI>
+            <LI clicked={false}><a href="/">Privacy</a></LI>
             </Profile>
         </Container>
     )
@@ -41,6 +41,7 @@ export default ProfileMenu
 const Container = styled.div`
     display: flex;
     flex-direction: column;
+    position:right;
     padding: 10px;
     border: 2px solid #e5e5e5;
     border-radius: 10px;
@@ -109,7 +110,7 @@ const LI =styled.li`
     list-style: none;
     border: 2px solid white;
     border-radius: 15px;
-    background-color: ${ props => props.clicked == true ? 'rgba(0,0,0,0.2)' : 'white' }
+    background-color: ${ props => props.clicked === true ? 'rgba(0,0,0,0.2)' : 'white' }
     &: hover{
         background-color: rgba(0,0,0,0.2);
     }
