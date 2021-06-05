@@ -50,7 +50,7 @@ function Coach() {
             <MainContainer>
             <GoalSetting>
             <Title>
-                <h2>Daily Goal settings</h2>
+                <h2>Daily Exercise settings</h2>
                 <Button selected={goalClicked} > SAVE CHANGES</Button>
                 
             </Title>
@@ -84,18 +84,21 @@ const Container = styled.main`
     overflow-x: hidden;
     position:relative;
     margin-top: 80px;
+    justify-content: center;
     padding-top: 10px;
     width: 100%;
     min-height: calc(100vh - 70px);
-    margin-left: 400px;
-    margin-right: 350px;
-    max-width: 1140px;
+    // margin-left: 400px;
+    // margin-right: 350px;
+    // max-width: 1140px;
     // min-width: 900px;   
 `
 const MainContainer = styled.div`
 padding-right: 20px;
+// margin-left: 400px;
 overflow-x: hidden;
 width: max-content;
+align-items:center;
 `
 const GoalSetting = styled.div`
 padding-bottom: 40px;

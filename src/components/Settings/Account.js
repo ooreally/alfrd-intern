@@ -7,6 +7,7 @@ import ProfileMenu from './ProfileMenu';
 let btnClicked = null;
 let changeDone = null;
 let btnClickedAgain = false;
+
 function Account() {
     
     const [username,setUsername] = useState('HerculesMunda');
@@ -17,7 +18,7 @@ function Account() {
         "Animations" ,
         "Motivational messages" ,
         "Listening exercises" ]
-        
+
     const nameChangeHandler = (value) => {
         setEmail(value);
     }
@@ -32,7 +33,7 @@ function Account() {
         
         if(btnClickedAgain == true && btnClicked == index)
         {
-            console.log("again again")
+            // console.log("again again")
             setBtnChanged(index);
             btnClicked = index;
             changeDone = index;
@@ -40,7 +41,7 @@ function Account() {
         }
         else if( btnClicked == index )
         {   
-            console.log("again")
+            // console.log("again")
             setBtnChanged(null);
             btnClicked = index;
             changeDone = null;
@@ -53,7 +54,7 @@ function Account() {
             btnClicked = index;
             changeDone = index;
             btnClickedAgain = false;
-            console.log(btnClickedAgain);
+            // console.log(btnClickedAgain);
         }
 
         
@@ -137,16 +138,18 @@ const Container = styled.div`
     margin-top: 80px;
     padding-top: 10px;
     width: 100%;
+    justify-content: center;
     min-height: calc(100vh - 70px);
-    margin-left: 400px;
-    margin-right: 350px;
-    max-width: 1140px;
-    min-width: 900px;   
+    // margin-left: 400px;
+    // margin-right: 350px;
+    // max-width: 1140px;
+    // min-width: 900px;   
 `
 const MainContainer = styled.div`
 padding-right: 20px;
 overflow-x: hidden;
 width: max-content;
+align-items: center;
 `
 const AccountSetting = styled.div`
 padding-bottom: 40px;
