@@ -23,6 +23,7 @@ export default FooterNav
 const FootNav = styled.div`
     border-top: 2px solid #e5e5e5;
     padding-top: 20px;
+    margin-top: 20px;
     display: flex;
     width:max-content;
     flex-direction: row;
