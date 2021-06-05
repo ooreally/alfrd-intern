@@ -46,6 +46,12 @@ function Header() {
             <span>SHOP</span>
           </a>
         </Wrap>
+        {/* <Wrap>
+          <a href="/">
+            <img src="/images/icon2.png" />
+            <span>Anything</span>
+          </a>
+        </Wrap> */}
         <Wrap>
           <a href="/">
             <img src="https://d35aaqx5ub95lt.cloudfront.net/vendor/d3f3ad5d80a9a934e00054f56ec5fbe9.svg" />

@@ -5,7 +5,7 @@ import MainCard from "./MainCard"
 import CoursesCard from "./CoursesCard";
 import CoursesCard2 from "./CoursesCard2";
 import FooterNav from "../FooterNav";
-import SideLearnDiv from "./SideLearnDiv";
+import SideLearnDiv from "./SideLearnDiv/SideLearnDiv";
 function Learn() {
  
  
