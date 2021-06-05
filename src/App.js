@@ -4,7 +4,7 @@ import Account from './components/Settings/Account';
 import Coach from './components/Settings/Coach';
 import Header from './components/Header';
 import Learn from './components/Learn/Learn';
-import H2 from './components/H2';
+
 import './App.css';
 
 function App() {
