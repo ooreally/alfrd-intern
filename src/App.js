@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Account from './components/Settings/Account';
 import Coach from './components/Settings/Coach';
 import Header from './components/Header';
+import Learn from './components/Learn/Learn';
 import './App.css';
 
 function App() {
@@ -14,8 +15,11 @@ function App() {
           <Route path="/settings/coach" exact>
             <Coach />
           </Route>
-          <Route path="/settings/Account" exact>
+          <Route path="/settings/account" exact>
             <Account />
+          </Route>
+          <Route path="/learn" exact>
+            <Learn />
           </Route>
           <Route path="/" >
             <Coach/>
